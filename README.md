@@ -8,8 +8,7 @@ Welcome to the **AWS Tools and Guides** repository! This repository contains a c
 /aws-tools-and-guides
 │── scripts/          # Automation scripts (Bash, Python, etc.)
 │── guides/           # Step-by-step tutorials and best practices
-│── terraform/        # Terraform modules and IaC examples
-│── cloudformation/   # CloudFormation templates for AWS resources
+│── iac/              # Terraform modules, CloudFormation and IaC examples
 │── cli-commands/     # Useful AWS CLI commands and shortcuts
 │── examples/         # Sample configurations and use cases
 │── README.md         # This file
@@ -19,7 +18,7 @@ Welcome to the **AWS Tools and Guides** repository! This repository contains a c
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/aws-tools-and-guides.git
+   git clone https://github.com/maorbrantz/aws-tools-and-guides.git
    cd aws-tools-and-guides
    ```
 2. Explore the relevant directories for scripts, guides, and templates.
@@ -42,12 +41,6 @@ Welcome to the **AWS Tools and Guides** repository! This repository contains a c
 ### 🔹 AWS CLI Commands
 - A collection of useful AWS CLI commands for quick reference.
 - Examples: EC2 instance management, S3 operations, IAM role assignments.
-
-## 📝 Contribution
-Contributions are welcome! If you have useful scripts, guides, or templates, feel free to submit a pull request.
-
-## 📜 License
-This repository is licensed under the MIT License.
 
 ---
 
