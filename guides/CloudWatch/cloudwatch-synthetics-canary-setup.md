@@ -20,7 +20,7 @@ Before starting, make sure you have:
 4. Click **Create Canary**.
 
 📌 *Screenshot Example:*
-![alt text](image-1.png)
+![alt text](Screenshots/Screenshots/image-1.png)
 
 ---
 
@@ -30,7 +30,7 @@ Before starting, make sure you have:
 3. **Enter URL**: Click on **Add HTTP Request**, Choose **GET Method** and Provide the application URL (e.g., `https://myapp.example.com`).
 
 📌 *Screenshot Example:*
-![alt text](image.png)
+![alt text](Screenshots/image.png)
 
 ---
 
@@ -40,7 +40,7 @@ Before starting, make sure you have:
 2. Enable **Data Retention**, set it to **31 days**.
 
 📌 *Screenshot Example:*
-![alt text](image-2.png)
+![alt text](Screenshots/image-2.png)
 
 ---
 
@@ -50,7 +50,7 @@ Before starting, make sure you have:
 3. Connect it to an **SNS Topic** for email/SMS notifications.
 
 📌 *Screenshot Example:*
-![alt text](image-3.png)
+![alt text](Screenshots/image-3.png)
 
 ---
 
@@ -67,7 +67,7 @@ Before starting, make sure you have:
 - (Optional) Add additional Canaries to test different endpoints.
 
 📌 *Screenshot Example:*
-![alt text](image-4.png)
+![alt text](Screenshots/image-4.png)
 
 ---
 
