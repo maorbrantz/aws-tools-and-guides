@@ -74,16 +74,46 @@ If your EC2 instance is not already associated with an **IAM role**, you need to
 
 ---
 
-## 🌍 Step 4: Configure Your Local Machine
-Ensure **AWS CLI** is installed and configured with credentials that allow you to use SSM:
-```sh
-aws configure
-```
-You need an IAM user with **Session Manager permissions** to initiate the session.
+## 🌍 Step 4: Install AWS CLI and Session Manager Plugin
+
+To enable session management and port forwarding, you need both the **AWS CLI** and the **Session Manager Plugin** installed on your local machine.
+
+### ➡️ Install AWS CLI:
+
+1. Download the AWS CLI installer for Windows:  
+   [Download AWS CLI v2 for Windows (.msi)](https://awscli.amazonaws.com/AWSCLIV2.msi)
+
+2. Run the installer and complete the setup.
+
+3. Verify the installation:
+   ```sh
+   aws --version
+You should see the AWS CLI version output.
+
+### ➡️ Install Session Manager Plugin:
+
+1. Download the Session Manager Plugin installer for Windows:  
+   [Download Session Manager Plugin](https://docs.aws.amazon.com/systems-manager/latest/userguide/install-plugin-windows.html)
+
+2. Run the installer and complete the setup.
+
+3. Verify the plugin installation:
+    ```sh
+    session-manager-plugin --version
+You should see the plugin version output.
 
 ---
 
-## 🎯 Step 5: Start Port Forwarding Session
+## 🔑 Step 5: Configure Your Local Machine
+
+After installing the AWS CLI and the Session Manager Plugin, configure the AWS CLI with your credentials:
+    ```sh
+    aws configure
+Ensure that the credentials used have permissions to start SSM sessions.
+
+---
+
+## 🎯 Step 6: Start Port Forwarding Session
 Now, use the AWS CLI to establish an **SSM session with Port Forwarding**:
 
 ```sh
@@ -101,7 +131,7 @@ Port 13389 on your local machine is forwarding to port 3389 on the remote instan
 
 ---
 
-## 🖥 Step 6: Connect to RDP via Localhost
+## 🖥 Step 7: Connect to RDP via Localhost
 
 1️⃣ Open **Remote Desktop Connection** (`mstsc.exe` on Windows).  
 2️⃣ In the **Computer** field, enter:
@@ -112,7 +142,7 @@ Port 13389 on your local machine is forwarding to port 3389 on the remote instan
 
 ---
 
-## ✅ Step 7: End the Session
+## ✅ Step 8: End the Session
 Once you're done, **terminate the session** in AWS CLI by pressing `CTRL+C`, or manually via:
 ```sh
 aws ssm terminate-session --session-id <SESSION_ID>
