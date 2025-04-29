@@ -107,7 +107,7 @@ You should see the plugin version output.
 ## 🔑 Step 5: Configure Your Local Machine
 
 After installing the AWS CLI and the Session Manager Plugin, configure the AWS CLI with your credentials:
-    ```sh
+    
     aws configure
 Ensure that the credentials used have permissions to start SSM sessions.
 
